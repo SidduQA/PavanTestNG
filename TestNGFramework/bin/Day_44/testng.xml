@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+
+<suite name="GroupingSuite">
+  <test thread-count="5" name="GroupingTests">
+	  <groups>
+		  <run>
+			  <include name="sanity"/>
+			  <!--exclude name="regression"></exclude-->
+		  </run>
+	  </groups>
+	  
+	  
+    <classes>
+      <class name="Day_44.PaymentTest"/>
+      <class name="Day_44.SignupTest"/>
+      <class name="Day_44.LoginTest"/>
+    </classes>
+  </test> <!-- GroupingTests -->
+</suite> <!-- GroupingSuite -->
